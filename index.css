@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    transition: all 1.8s;
+}
+
+/* Navbar css */
+
+.navbar {
+    margin: 0;
+    padding: 0px 40px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 200000;
+    transition: all 01s;
+    /* background-color: rgb(2, 1, 46); */
+    background: transparent;
+    color: blue;
+    position: sticky;
+    top: 0;
+    display: none;
+}
+
+.bg {
+    background-color: rgb(2, 1, 46);
+    height: 50px;
+}
+
+.navbar .navbar-left {
+    font-size: 25px;
+    font-weight: 500;
+    color: darkgreen;
+}
+
+
+
+.navbar .navbar-right a {
+    font-size: 19px;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3px;
+    border-radius: 6px;
+    color: white;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.navbar .navbar-right a:hover {
+    color: rgb(13, 181, 15);
+}
+
+
+/*hamburgerv*/
+.hamburger {
+    font-size: 21px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/*Home Style*/
+
+#main {
+    display: none;
+}
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.home-section video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -20000;
+    top: 0;
+    margin: 0;
+    transform: scale(1);
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    position: fixed;
+    top: 0;
+}
+
+.home-section h2 {
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 90%;
+    max-width: 1200px;
+    margin: 200px auto;
+    text-align: center;
+    z-index: 0;
+    background-image: url("./assets/txtbg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+/* Technology section */
+.technology-section {
+    width: 100%;
+    background: rgb(38, 38, 81);
+    box-sizing: border-box;
+    padding: 20px;
+    background-image: url("./assets/txtbg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.technology-section h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 40px;
+    background-image: url("./assets/txtbg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+
+.zinc-battery {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px auto;
+    box-shadow: 0 0 12px 1px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    transform: scale(0.00000001);
+    transition: all 01.5s;
+    /* transform-origin: bottom; */
+}
+
+#sc-1 {
+    margin-right: 3%;
+}
+
+#sc-2 {
+    margin-left: 3%;
+}
+
+.zinc-battery img {
+    height: 250px;
+    margin-left: 19px;
+    border-radius: 10px;
+}
+
+.zinc-battery p {
+    /* color: white; */
+    font-size: 21px;
+    text-justify: auto;
+    width: 73%;
+    padding-left: 13px;
+}
+
+
+
+
+/*OUR TEAM */
+
+.about-section {
+    height: auto;
+    background: rgb(239, 236, 236);
+    /* background-color: green;; */
+    text-align: center;
+    padding: 13px;
+    z-index: 0;
+    position: relative;
+}
+
+.design {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.common {
+    box-shadow: 0 0 6px 1px;
+    padding: 15px 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    margin: 40px auto;
+    transform: scale(0.00000001);
+    transform-origin: bottom;
+    transition: all 01s;
+}
+
+
+
+.about-section h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: url("./assets/txtbg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+
+}
+
+.about-section p {
+    font-size: 18px;
+}
+
+
+
+.our-team h1 {
+    font-size: 30px;
+    color: darkblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 13px;
+
+}
+
+/* .line{
+    height: 4px;
+    width: 17%;
+    background-color: rgb(3, 60, 3) ;
+    border-radius: 10px;
+    margin: 5px;
+    margin-left: 41% ;
+} */
+.our-team .team-member {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    max-width: 640px;
+    margin: 10px auto 40px;
+
+}
+
+.supported-by {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2px auto;
+    padding-top: 20px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    transform: scale(0.00000001);
+    transition: all 01.5s;
+
+}
+
+.supported-by a {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right: 4px solid rgb(133, 97, 6);
+    padding-right: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.supported-by a img {
+    height: 180px;
+    width: 260px;
+}
+
+/*Our team card */
+/* .card{
+    width: 250px;
+    box-sizing: border-box;
+    border: 3px  solid rgb(133, 97, 6); ;
+} */
+
+.member-card {
+    width: 230px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    z-index: 2000;
+    transform: scale(0.00000001);
+    transition: all 01s;
+    /* box-shadow: 0 0 12px 4px; */
+
+}
+
+.member-card-img {
+    /* background: darkblue; */
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card-img img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 12px 3px; */
+    /* border: 3.5px solid rgb(61 37 37 / 75%); */
+}
+
+.member-card-text {
+    text-align: center;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 10px;
+
+}
+
+.member-card-text p {
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+
+
+
+
+/*Footer Style*/
+.footer-page {
+    background-color: #013566;
+    /* background:linear-gradient(to left, rgb(3, 67, 3), green); */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    /* height: 30vh; */
+    display: none;
+}
+
+.office-address {
+    display: flex;
+    padding: 20px 30px;
+    margin: 0px auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.map img {
+    width: 500px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: wheat;
+    margin: 0px 20px;
+    font-size: 20px;
+    color: white;
+    margin: 5px 10px;
+}
+
+.footer-icon a {
+    font-size: 20px;
+    color: white;
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+
+.opt {
+    transform: scale(1);
+}
+
+
+/*Media querry  */
+
+@media only screen and (max-width:1300px) {
+    .home-section h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+
+    .zinc-battery {
+        flex-direction: column;
+        width: 85%;
+
+    }
+
+    .map img {
+        display: none;
+    }
+
+    #sc-1 {
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+    #sc-2 {
+        margin: auto;
+        margin-top: 30px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:850px) {
+    .home-section h2 {
+        font-size: 40px;
+    }
+
+    .navbar-right {
+        display: none;
+        width: 300px;
+        /* background-color: blue; */
+        flex-direction: column;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        padding: 30px 0;
+        text-align: center;
+
+    }
+
+    #hamburger {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .home-section h2 {
+        font-size: 30px;
+    }
+
+    .zinc-battery {
+        padding: 15px 0px;
+        margin: 20px auto;
+        width: 92%;
+    }
+
+    .zinc-battery p {
+        margin: 0;
+        padding: 13px 0px;
+        width: 87%;
+    }
+
+    .zinc-battery img {
+        width: 95%;
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .technology-section {
+        padding: 20px 0;
+    }
+
+}
+
+@media only screen and (max-width:530px) {
+    .home-section h2 {
+        font-size: 30px;
+    }
+
+    .supported-by a {
+        border: none;
+        padding: 0;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .office-address {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .f-office {
+        padding-bottom: 20px;
+    }
+}
+
+
+#loader {
+    color: red;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    padding-top: 20%;
+    text-align: center;
+    box-sizing: border-box;
+}
