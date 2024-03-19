@@ -549,6 +549,7 @@ body {
 /* NEWS SECTION CSS */
 .news-section {
     min-height: 30vh;
+    font-family: "Poppins", sans-serif;
 }
 
 .news-section .heading {
@@ -562,20 +563,32 @@ body {
 .news {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 30px ;
+    padding-bottom: 30px;
 }
-.news-left-section{
-    width: 43%;
-    box-shadow: 5px 3px 10px 0px;
-    padding: 20px 30px;
-    p{
-        text-justify:distribute; 
-    }
 
-}
-.news-right-section{
+.news-left-section {
     width: 43%;
-    box-shadow: 0 0 12px 2px;
+    padding: 20px 30px;
+
+    p {
+        color: rgb(110, 108, 108);
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+    }
+}
+
+.news-right-section {
+    width: 43%;
     padding: 20px;
-    
+
+    p {
+        color: rgb(110, 108, 108);
+        font-family: "Poppins", sans-serif;
+        font-size: 17px;
+    }
+}
+
+.news-heading {
+    color: #013566;
+    font-size: 25px;
 }
