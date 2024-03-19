@@ -5,6 +5,7 @@ body {
     width: 100%;
     position: relative;
     transition: all 1.8s;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Navbar css */
@@ -12,18 +13,16 @@ body {
 .navbar {
     margin: 0;
     padding: 0px 40px;
-    height: 70px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 200000;
     transition: all 01s;
-    /* background-color: rgb(2, 1, 46); */
-    background: transparent;
-    color: blue;
+    background-color: rgb(2, 1, 46);
+    font-family: "Poppins", sans-serif;
     position: sticky;
     top: 0;
-    display: none;
 }
 
 .bg {
@@ -33,10 +32,8 @@ body {
 
 .navbar .navbar-left {
     font-size: 25px;
-    font-weight: 500;
-    color: darkgreen;
+    font-weight: 300;
 }
-
 
 
 .navbar .navbar-right a {
@@ -44,9 +41,8 @@ body {
     text-decoration: none;
     padding: 8px 16px;
     font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     margin-left: 3px;
-    border-radius: 6px;
     color: white;
     transition: all 0.6s;
     cursor: pointer;
@@ -57,67 +53,23 @@ body {
 }
 
 
-/*hamburgerv*/
-.hamburger {
-    font-size: 21px;
-    color: white;
-    cursor: pointer;
-    display: none;
-}
-
-
-
 
 
 /*Home Style*/
 
-#main {
-    display: none;
-}
 
 .home-section {
     width: 100%;
-    height: 100vh;
-
-}
-
-.home-section video {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -20000;
-    top: 0;
+    height: auto;
     margin: 0;
-    transform: scale(1);
-    object-fit: cover;
+    padding: 0;
+    background-color: rgb(222, 246, 228);
+
 }
 
-.overlay {
-    background: rgba(0, 0, 0, 0.6);
+.home-section img {
     width: 100%;
-    height: 100%;
-    z-index: -100;
-    position: fixed;
-    top: 0;
-}
-
-.home-section h2 {
-    color: white;
-    font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 90%;
-    max-width: 1200px;
-    margin: 200px auto;
-    text-align: center;
-    z-index: 0;
-    background-image: url("./assets/txtbg2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
+    height: 80vh;
 }
 
 /* Technology section */
@@ -126,65 +78,28 @@ body {
     background: rgb(38, 38, 81);
     box-sizing: border-box;
     padding: 20px;
-    background-image: url("./assets/txtbg2.png");
+    margin-top: -30px;
+    background-image: url("./assets/techbg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    /* background-size: cover; */
+    object-fit: cover;
 
+}
 
 .technology-section h1 {
+    margin: 0;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
     font-size: 40px;
-    margin-bottom: 40px;
-    background-image: url("./assets/txtbg7.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
-
+    color: darkblue;
+    font-family: "Poppins", sans-serif;
+    /* padding: 13px; */
 }
 
-.zinc-battery {
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 40px auto;
-    box-shadow: 0 0 12px 1px;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: white;
-    transform: scale(0.00000001);
-    transition: all 01.5s;
-    /* transform-origin: bottom; */
+.technology-section li {
+    font-size: 22px;
+    color: darkgreen;
 }
 
-#sc-1 {
-    margin-right: 3%;
-}
-
-#sc-2 {
-    margin-left: 3%;
-}
-
-.zinc-battery img {
-    height: 250px;
-    margin-left: 19px;
-    border-radius: 10px;
-}
-
-.zinc-battery p {
-    /* color: white; */
-    font-size: 21px;
-    text-justify: auto;
-    width: 73%;
-    padding-left: 13px;
-}
 
 
 
@@ -194,7 +109,6 @@ body {
 .about-section {
     height: auto;
     background: rgb(239, 236, 236);
-    /* background-color: green;; */
     text-align: center;
     padding: 13px;
     z-index: 0;
@@ -208,12 +122,10 @@ body {
 }
 
 .common {
-    box-shadow: 0 0 6px 1px;
     padding: 15px 30px;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px;
     margin: 40px auto;
-    transform: scale(0.00000001);
     transform-origin: bottom;
     transition: all 01s;
 }
@@ -222,21 +134,23 @@ body {
 
 .about-section h1 {
     text-align: center;
-    padding: 0;
+    padding: 10px;
     margin: 0;
-    background-image: url("./assets/txtbg7.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-
-
+    font-size: 40px;
+    color: darkblue;
+    font-family: "Poppins", sans-serif;
 }
 
-.about-section p {
-    font-size: 18px;
+.about-us {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.common p {
+    font-size: 20px;
+    /* color: green; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 
@@ -244,7 +158,7 @@ body {
 .our-team h1 {
     font-size: 30px;
     color: darkblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     padding-top: 13px;
 
 }
@@ -273,9 +187,9 @@ body {
     width: 100%;
     margin: 2px auto;
     padding-top: 20px;
-    max-width: 1000px;
+    max-width: 1300px;
     flex-wrap: wrap;
-    transform: scale(0.00000001);
+    /* transform: scale(0.00000001); */
     transition: all 01.5s;
 
 }
@@ -293,24 +207,28 @@ body {
 
 .supported-by a img {
     height: 180px;
-    width: 260px;
+    width: 360px;
 }
 
 /*Our team card */
-/* .card{
+.card {
     width: 250px;
     box-sizing: border-box;
-    border: 3px  solid rgb(133, 97, 6); ;
-} */
+    /* border: 3px  solid rgb(133, 97, 6); ; */
+    background: transparent;
+    border: none;
+}
 
 .member-card {
     width: 230px;
     padding: 20px 0px;
     box-sizing: border-box;
+    background: transparent;
     z-index: 2000;
-    transform: scale(0.00000001);
+    /* transform: scale(0.00000001); */
     transition: all 01s;
     /* box-shadow: 0 0 12px 4px; */
+    border: none;
 
 }
 
@@ -352,12 +270,9 @@ body {
 /*Footer Style*/
 .footer-page {
     background-color: #013566;
-    /* background:linear-gradient(to left, rgb(3, 67, 3), green); */
     color: white;
     padding: 30px;
     text-align: center;
-    /* height: 30vh; */
-    display: none;
 }
 
 .office-address {
@@ -388,6 +303,17 @@ body {
     color: white;
     margin: 5px 10px;
     text-decoration: none;
+}
+
+.footer-copy {
+    background: transparent;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(25, 25, 66);
+    font-family: poppins;
+    font-weight: 600;
 }
 
 
@@ -437,7 +363,7 @@ body {
     }
 
     .navbar-right {
-        display: none;
+        /* display: none; */
         width: 300px;
         /* background-color: blue; */
         flex-direction: column;
@@ -447,10 +373,6 @@ body {
         padding: 30px 0;
         text-align: center;
 
-    }
-
-    #hamburger {
-        display: inline;
     }
 }
 
@@ -518,4 +440,142 @@ body {
     padding-top: 20%;
     text-align: center;
     box-sizing: border-box;
+}
+
+
+
+
+
+/* SLIDER CSS */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+/* NEWS SECTION CSS */
+.news-section {
+    min-height: 30vh;
+}
+
+.news-section .heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    color: rgb(16, 16, 89);
+    font-weight: 600;
+}
+
+.news {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px ;
+}
+.news-left-section{
+    width: 43%;
+    box-shadow: 5px 3px 10px 0px;
+    padding: 20px 30px;
+    p{
+        text-justify:distribute; 
+    }
+
+}
+.news-right-section{
+    width: 43%;
+    box-shadow: 0 0 12px 2px;
+    padding: 20px;
+    
 }
