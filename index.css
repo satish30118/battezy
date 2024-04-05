@@ -1,84 +1,25 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
-    position: relative;
-    transition: all 1.8s;
+
+}
+
+body {
     font-family: "Poppins", sans-serif;
 }
 
-/* Navbar css */
-
-.navbar {
-    margin: 0;
-    padding: 0px 40px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 200000;
-    transition: all 01s;
-    background-color: rgb(2, 1, 46);
-    font-family: "Poppins", sans-serif;
-    position: sticky;
-    top: 0;
-}
-
-.bg {
-    background-color: rgb(2, 1, 46);
-    height: 50px;
-}
-
-.navbar .navbar-left {
-    font-size: 25px;
-    font-weight: 300;
-}
-
-
-.navbar .navbar-right a {
-    font-size: 19px;
-    text-decoration: none;
-    padding: 8px 16px;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    margin-left: 3px;
-    color: white;
-    transition: all 0.6s;
-    cursor: pointer;
-}
-
-.navbar .navbar-right a:hover {
-    color: rgb(13, 181, 15);
-}
-
-
-
-
-/*Home Style*/
-
-
-.home-section {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(222, 246, 228);
-
-}
-
-.home-section img {
-    width: 100%;
-    height: 80vh;
+.my-slider {
+    height: 600px;
 }
 
 /* Technology section */
 .technology-section {
     width: 100%;
+    height: 95vh;
     background: rgb(38, 38, 81);
     box-sizing: border-box;
     padding: 20px;
-    margin-top: -30px;
     background-image: url("./assets/techbg.jpg");
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -88,16 +29,19 @@ body {
 
 .technology-section h1 {
     margin: 0;
+    font-weight: 700;
+    margin-top: 20px;
     text-align: center;
     font-size: 40px;
     color: darkblue;
-    font-family: "Poppins", sans-serif;
-    /* padding: 13px; */
+    padding: 15px 0;
 }
 
 .technology-section li {
     font-size: 22px;
     color: darkgreen;
+    list-style-position: inside;
+    text-align: center;
 }
 
 
@@ -121,8 +65,8 @@ body {
     padding: 0;
 }
 
-.common {
-    padding: 15px 30px;
+.about {
+    padding: 15px 20px;
     max-width: 1200px;
     border-radius: 10px;
     margin: 40px auto;
@@ -138,17 +82,11 @@ body {
     margin: 0;
     font-size: 40px;
     color: darkblue;
-    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
-.about-us {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.common p {
-    font-size: 20px;
-    /* color: green; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.about p {
+    font-size: 19px;
     font-weight: 100;
     font-style: normal;
 }
@@ -156,28 +94,19 @@ body {
 
 
 .our-team h1 {
-    font-size: 30px;
+    font-size: 40px;
     color: darkblue;
-    font-family: "Poppins", sans-serif;
     padding-top: 13px;
 
 }
 
-/* .line{
-    height: 4px;
-    width: 17%;
-    background-color: rgb(3, 60, 3) ;
-    border-radius: 10px;
-    margin: 5px;
-    margin-left: 41% ;
-} */
 .our-team .team-member {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
-    max-width: 640px;
-    margin: 10px auto 40px;
+    max-width: 800px;
+    margin: 10px auto;
 
 }
 
@@ -211,25 +140,13 @@ body {
 }
 
 /*Our team card */
-.card {
-    width: 250px;
-    box-sizing: border-box;
-    /* border: 3px  solid rgb(133, 97, 6); ; */
-    background: transparent;
-    border: none;
-}
-
 .member-card {
-    width: 230px;
+    width: 320px;
     padding: 20px 0px;
     box-sizing: border-box;
     background: transparent;
     z-index: 2000;
-    /* transform: scale(0.00000001); */
-    transition: all 01s;
-    /* box-shadow: 0 0 12px 4px; */
-    border: none;
-
+    /* border: 2px solid black; */
 }
 
 .member-card-img {
@@ -246,13 +163,13 @@ body {
     height: 160px;
     border-radius: 50%;
     /* box-shadow: 0 0 12px 3px; */
-    /* border: 3.5px solid rgb(61 37 37 / 75%); */
+    border: 6px solid white;
 }
 
 .member-card-text {
     text-align: center;
     color: darkblue;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 550;
     padding: 10px;
 
@@ -271,7 +188,7 @@ body {
 .footer-page {
     background-color: #013566;
     color: white;
-    padding: 30px;
+    padding: 30px 15px;
     text-align: center;
 }
 
@@ -317,9 +234,6 @@ body {
 }
 
 
-.opt {
-    transform: scale(1);
-}
 
 
 /*Media querry  */
@@ -328,6 +242,12 @@ body {
     .home-section h2 {
         font-size: 50px;
     }
+
+    .my-slider {
+        height: 550px;
+    }
+
+
 }
 
 @media only screen and (max-width:1000px) {
@@ -343,14 +263,14 @@ body {
         display: none;
     }
 
-    #sc-1 {
-        margin: auto;
-        flex-direction: column-reverse;
-    }
 
     #sc-2 {
         margin: auto;
         margin-top: 30px;
+    }
+
+    .my-slider {
+        height: 500px;
     }
 
 }
@@ -362,18 +282,10 @@ body {
         font-size: 40px;
     }
 
-    .navbar-right {
-        /* display: none; */
-        width: 300px;
-        /* background-color: blue; */
-        flex-direction: column;
-        position: fixed;
-        top: 50px;
-        right: 0;
-        padding: 30px 0;
-        text-align: center;
-
+    .my-slider {
+        height: 450px;
     }
+
 }
 
 @media only screen and (max-width:650px) {
@@ -404,16 +316,27 @@ body {
         padding: 20px 0;
     }
 
+    .my-slider {
+        height: 400px;
+    }
+
 }
 
 @media only screen and (max-width:530px) {
     .home-section h2 {
         font-size: 30px;
     }
+    .technology-section{
+        height: auto;
+    }
 
     .supported-by a {
         border: none;
         padding: 0;
+    }
+
+    .supported-by a img {
+        width: 260px;
     }
 
     .team-member {
@@ -429,120 +352,39 @@ body {
     .f-office {
         padding-bottom: 20px;
     }
-}
 
-
-#loader {
-    color: red;
-    font-size: 50px;
-    height: 100%;
-    width: 100%;
-    padding-top: 20%;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-
-
-
-
-/* SLIDER CSS */
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .7
+    .f-office h2 {
+        font-size: 28px;
     }
 
-    to {
-        opacity: 1
+    .s-office h2 {
+        font-size: 28px;
+    }
+
+    .contact a {
+        font-size: 17px;
+    }
+
+    .my-slider {
+        height: 330px;
+    }
+
+    .technology-section h1 {
+        font-size: 35px;
+    }
+
+    .technology-section li {
+        font-size: 18px;
+    }
+
+    .about-us p {
+        font-size: 17px;
     }
 }
+
+
+
+
 
 
 
@@ -554,41 +396,63 @@ body {
 
 .news-section .heading {
     text-align: center;
-    font-family: "Poppins", sans-serif;
     font-size: 40px;
     color: rgb(16, 16, 89);
     font-weight: 600;
+    padding: 20px 0;
 }
 
 .news {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 
-.news-left-section {
-    width: 43%;
-    padding: 20px 30px;
-
-    p {
-        color: rgb(110, 108, 108);
-        font-family: "Poppins", sans-serif;
-        font-size: 17px;
-    }
+.news-card{
+    position: relative;
+    margin:20px;
+    text-align: center;
+    width: 500px;
+    /* border: 10px solid rgb(47, 45, 154); */
+}
+.news-card img{
+    width: 100%;
+    height: 300px;
+}
+.news-img-overlay{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    background-color:rgba(50, 56, 50,0.5);
 }
 
-.news-right-section {
-    width: 43%;
-    padding: 20px;
 
-    p {
-        color: rgb(110, 108, 108);
-        font-family: "Poppins", sans-serif;
-        font-size: 17px;
-    }
+.news-heading{
+    position: absolute;
+    bottom: 100px;
+    padding: 0 10px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+.news-btn{
+    position: absolute;
+    bottom: 10px;
+    width: 130px;
+    right: 10px;
+    padding: 7px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: darkblue;
+    font-weight: 600;
 }
 
-.news-heading {
-    color: #013566;
-    font-size: 25px;
+
+
+
+@media only screen and (max-width:850px) {
+    
 }

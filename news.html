@@ -4,62 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battezy || News</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Battezy || News</title>
+
 </head>
 
 <body>
-    <nav class="navbar" id="navbar">
-        <div className="navbar-left">
-            <p>logo</p>
-        </div>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand  mb-0 h1" href="./index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div class="navbar-right" id="navbar-right">
-            <a href="./index.html">Home</a>
-            <a href="./index.html">
-                Technology
-            </a>
-            <a href="./index.html">
-                About Us
-            </a>
-            <a href="./index.html">
-                Contact
-            </a>
-            <a href="#">News</a>
+        <div class="collapse navbar-collapse mb-0 h6 justify-content-end" id="navbarSupportedContent"
+            style="margin-right: 70px; font-weight: 700;">
+            <ul class="navbar-nav  ">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="./index.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./index.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="#">Latest News</a>
+                </li>
+            </ul>
 
         </div>
     </nav>
+    <!-- NAVBAR -->
 
     <main>
         <div class="news-section">
-            <h1 class="heading">Latest News</h1>
+            <h1 class="heading" data-aos="fade-up">Latest News</h1>
             <div class="news">
-                <div class="news-left-section">
-                    <div>
-                        <h2 class="news-heading">Article on Carbon Zinc Batteries</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam obcaecati repellat quia earum laboriosam magni, dicta officia doloribus suscipit qui ducimus iusto, atque pariatur similique laudantium commodi ut eius fugit culpa mollitia quod consectetur! Unde sed vero voluptate dolore voluptatibus placeat natus ut a consequuntur vel optio ad volupt officia natus! Amet laboriosam distinctio quasi accusamus! Perspiciatis maxime obcaecati quos dicta \dolorem repellendus voluptatum, sint corrupti velit est! Nam, dicta quisquam ipsum hic dolores autem deserunt sint voluptatem beatae eum reiciendis modi quam cumque distinctio ipsam et, quae inventore, beatae voluptates quis nemo.</p>
-                        <button>Read more..</button>
-                    </div>
-                    <div>
-                        <h2 class="news-heading">Article on Lithium-ion Batteries</h2>
-                        <p>veritatis, corporis cupiditate suscipit! Officia qui porro quos expedita minus, nostrum, hic quod obcaecati est nesciunt cupiditate, ipsa repellendus consectetur saepe numquam fuga beatae fugiat exercitationem excepturi pariatur nam quia perspiciatis? Soluta eaque, saepe ipsa sit dolore mollitia cupiditate totam libero, quaerat iusto vero nemo a suscipit ex, doloribus ipsum sed! Nulla asperiores dolorem,  </p>
-                        <button>Read more..</button>
-                    </div>
 
+                <div class="news-card" data-aos="fade-up">
+                    <div class="news-img-overlay"></div>
+                    <h4 class="news-heading">Received DST NIDHI PRAYAS grant from tides iit Roorkee</h4>
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="">
+                    <button class="news-btn">Read more..</button>
                 </div>
-                <div class="news-right-section">
-                    <div>
-                        <h2 class="news-heading">Article on Lithium-ion Batteries</h2>
-                        <p>veritatis, corporis cupiditate suscipit! Officia qui porro quos expedita minus, nostrum, hic quod obcaecati est nesciunt cupiditate, ipsa repellendus consectetur saepe numquam fuga beatae fugiat exercitationem excepturi pariatur nam quia perspiciatis? Soluta eaque, saepe ipsa sit dolore mollitia cupiditate totam libero, quaerat iusto vero nemo a suscipit ex, doloribus ipsum sed! Nulla asperiores dolorem,  </p>
-                        <button>Read more..</button>
-                    </div>
-                    <div>
-                        <h2 class="news-heading">Article on Lithium-ion Batteries</h2>
-                        <p>veritatis, corporis cupiditate suscipit! Officia qui porro quos expedita minus, nostrum, hic quod obcaecati est nesciunt cupiditate, ipsa repellendus consectetur saepe numquam fuga beatae fugiat exercitationem excepturi pariatur nam quia perspiciatis? Soluta eaque, saepe ipsa s Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid reprehenderit labore molestiae rerum quo quos, nemo minus necessitatibus ratione at!it dolore mollitia cupiditate totam libero, quaerat iusto vero nemo a suscipit ex, doloribus ipsum sed! Nulla asperiores dolorem,  </p>
-                        <button>Read more..</button>
-                    </div>
+                <div class="news-card" data-aos="fade-up">
+                    <div class="news-img-overlay"></div>
+                    <h4 class="news-heading">Incubated at tides IIT Roorkee</h4>
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="">
+                    <button class="news-btn">Read more..</button>
+                </div>
+                <div class="news-card" data-aos="fade-up">
+                    <div class="news-img-overlay"></div>
+                    <h4 class="news-heading">Presented poster in research scholar day</h4>
+                    <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="">
+                    <button class="news-btn">Read more..</button>
+                </div>
 
-                </div>
+
             </div>
         </div>
 
@@ -119,7 +132,23 @@
 
         </div>
     </footer>
-
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+        });
+    </script>
 
 </body>
 
