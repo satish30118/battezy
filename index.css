@@ -89,6 +89,7 @@ body {
     font-size: 19px;
     font-weight: 100;
     font-style: normal;
+    font-weight:540;
 }
 
 
@@ -327,7 +328,7 @@ body {
         font-size: 30px;
     }
     .technology-section{
-        height: auto;
+        height: 50vh;
     }
 
     .supported-by a {
