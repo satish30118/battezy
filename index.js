@@ -26,4 +26,6 @@ function navbg (){
   }
 }
 
-navbg();
+if(Window.scrollY > 0){
+  navbg();
+}
